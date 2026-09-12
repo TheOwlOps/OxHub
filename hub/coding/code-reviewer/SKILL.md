@@ -1,11 +1,11 @@
 ---
-name: ox-code-reviewer
+name: code-reviewer
 description: Use when conducting thorough, multi-axis code reviews before merging or pushing changes.
 author: TheOwlOps
 version: 1.0.0
 ---
 
-# OX High-Velocity Code Reviewer
+# High-Velocity Code Reviewer
 
 Ultra-terse, high-signal code review standard focused on correctness, memory allocation, edge cases, and maintainability.
 

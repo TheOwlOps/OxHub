@@ -1,11 +1,11 @@
 ---
-name: ox-pen-test
+name: pen-test
 description: Use when assessing API endpoints, authentication flows, and network services for penetration security risks.
 author: TheOwlOps
 version: 1.0.0
 ---
 
-# OX API & Network Penetration Testing
+# API & Network Penetration Testing
 
 Assess attack surfaces on REST APIs, WebSocket channels, and RPC servers.
 

@@ -1,11 +1,11 @@
 ---
-name: ox-refactor-cleanup
+name: refactor-cleanup
 description: Use when refactoring messy files, simplifying bloated functions, and deleting legacy debt.
 author: TheOwlOps
 version: 1.0.0
 ---
 
-# OX Refactoring & Dead-Code Elimination
+# Refactoring & Dead-Code Elimination
 
 Eliminate boilerplate, streamline architectures, and remove technical debt while preserving exact behavior.
 

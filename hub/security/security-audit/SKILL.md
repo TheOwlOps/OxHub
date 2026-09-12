@@ -1,11 +1,11 @@
 ---
-name: ox-security-audit
+name: security-audit
 description: Use when auditing source code for security vulnerabilities, secret leaks, and OWASP issues.
 author: TheOwlOps
 version: 1.0.0
 ---
 
-# OX Security Audit & Hardening
+# Security Audit & Hardening
 
 Conduct systematic static and dynamic security assessments across Go, TypeScript, Python, and shell scripts.
 

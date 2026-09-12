@@ -406,42 +406,6 @@
       "description": "Instruments code so production behavior is visible and diagnosable. Use when adding logging, metrics, tracing, or alerting. Use when shipping any feature that runs in production and you need evidence it works. Use when production issues are reported but you can't tell what happened from the available data."
     },
     {
-      "name": "ox-alpha-tool-port",
-      "category": "ox-alpha-tool-port",
-      "path": "hub/skills/ox-alpha-tool-port/SKILL.md",
-      "description": "Use when porting Hermes tools to OX Alpha AgentTool."
-    },
-    {
-      "name": "ox-code-reviewer",
-      "category": "ox-code-reviewer",
-      "path": "hub/skills/ox-code-reviewer/SKILL.md",
-      "description": "Use when conducting thorough, multi-axis code reviews before merging or pushing changes."
-    },
-    {
-      "name": "ox-pen-test",
-      "category": "ox-pen-test",
-      "path": "hub/skills/ox-pen-test/SKILL.md",
-      "description": "Use when assessing API endpoints, authentication flows, and network services for penetration security risks."
-    },
-    {
-      "name": "ox-refactor-cleanup",
-      "category": "ox-refactor-cleanup",
-      "path": "hub/skills/ox-refactor-cleanup/SKILL.md",
-      "description": "Use when refactoring messy files, simplifying bloated functions, and deleting legacy debt."
-    },
-    {
-      "name": "ox-security-audit",
-      "category": "ox-security-audit",
-      "path": "hub/skills/ox-security-audit/SKILL.md",
-      "description": "Use when auditing source code for security vulnerabilities, secret leaks, and OWASP issues."
-    },
-    {
-      "name": "ox-systematic-debug",
-      "category": "ox-systematic-debug",
-      "path": "hub/skills/ox-systematic-debug/SKILL.md",
-      "description": "Use when debugging crashes, unexpected outputs, panics, or flaky test failures."
-    },
-    {
       "name": "oxhud",
       "category": "oxhud",
       "path": "hub/skills/oxhud/SKILL.md",

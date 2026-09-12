@@ -10,13 +10,13 @@
 
 ## ⚡ 1-Line Universal Install (Community & Agents)
 
-Cài toàn bộ 120+ Skills vào agent của bạn bằng 1 lệnh duy nhất:
+Install all 120+ skills and tools directly into your agent environment with a single command:
 
 ### Linux / macOS:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/TheOwlOps/OxHub/main/install.sh | bash -s -- all
 ```
-*(Hoặc chọn từng agent: `bash -s -- hermes`, `bash -s -- claude`, `bash -s -- codex`)*
+*(Or target a specific agent: `bash -s -- hermes`, `bash -s -- claude`, `bash -s -- codex`)*
 
 ### Windows (PowerShell):
 ```powershell
@@ -25,44 +25,44 @@ irm https://raw.githubusercontent.com/TheOwlOps/OxHub/main/install.ps1 | iex
 
 ---
 
-## 🎯 Native CLI Commands (Cho từng Agent)
+## 🎯 Native CLI Commands (Per-Agent Setup)
 
 ### 1. Hermes Agent
-Hermes hỗ trợ quản lý qua hệ thống `skills tap` và `skills install`:
+Hermes natively manages external skills via `skills tap` and `skills install`:
 
-- **Add toàn bộ repository OxHub làm source**:
+- **Add the full OxHub repository as an official tap**:
   ```bash
   hermes skills tap add TheOwlOps/OxHub
   ```
-- **Install lẻ từng skill qua URL/ID**:
+- **Install individual skills via ID or direct URL**:
   ```bash
   hermes skills install TheOwlOps/OxHub/hub/security/security-audit
-  # Hoặc URL trực tiếp:
+  # Or via direct RAW URL:
   hermes skills install https://raw.githubusercontent.com/TheOwlOps/OxHub/main/hub/security/security-audit/SKILL.md
   ```
 
 ---
 
 ### 2. Claude Code
-- **Cài qua Plugin Manager**:
+- **Install via Plugin Marketplace**:
   ```bash
   /plugin marketplace add TheOwlOps/OxHub
   /plugin install oxhud
   ```
-- **Auto StatusLine setup**:
-  Thêm vào file cấu hình `~/.claude/settings.json`:
+- **Automated StatusLine Configuration**:
+  Add `statusLine` to your `~/.claude/settings.json`:
   ```json
   {
     "statusLine": "oxhud --agent=claude"
   }
   ```
-- **Khai thác Skills**:
-  Toàn bộ skills tải về thư mục `~/.claude/skills/` sẽ được Claude Code tự động nhận diện trong mọi phiên làm việc.
+- **Automatic Skills Discovery**:
+  All skills copied into `~/.claude/skills/` are automatically discovered and indexed by Claude Code in every session.
 
 ---
 
 ### 3. OpenAI Codex
-- Chạy wrapper trực tiếp hoặc load skill từ thư mục `~/.codex/skills/`:
+- Run the wrapper or load skills directly from `~/.codex/skills/`:
   ```bash
   echo '{"model":"gpt-4o","used_tokens":110000,"total_tokens":128000,"active_tool":"edit_file","status":"patching"}' | oxhud --agent=codex
   ```
@@ -71,15 +71,15 @@ Hermes hỗ trợ quản lý qua hệ thống `skills tap` và `skills install`:
 
 ## 🚀 OxHUD (CLI Real-time Statusline)
 
-Statusline viết bằng Go, zero-dependency, siêu nhẹ:
+A zero-dependency, ultra-low latency statusline written in Go:
 
 ```text
 [CLAUDE: Opus 3.7] ██░░░░░░░░ 50k/200k (25.0%)
 ◐ Tool: edit_file | Task: patching state.go
 ```
 
+### Build from Source:
 ```bash
-# Build binary
 go build -o bin/oxhud ./cmd/oxhud
 ```
 
@@ -87,17 +87,17 @@ go build -o bin/oxhud ./cmd/oxhud
 
 ## 📦 Skills & Plugins Catalog (120+ Skills)
 
-Tất cả kỹ năng được lập chỉ mục tại `hub/manifest.json`.
+All skills are declared and structured in `hub/manifest.json`.
 
-| Nhóm | Skills Nổi Bật | Công Dụng |
+| Category | Featured Skills | Highlights |
 | :--- | :--- | :--- |
-| 🛡️ **Security** | `ox-security-audit`, `ox-pen-test`, `security-and-hardening` | Rà quét secret, phòng chống SQLi/RCE/SSRF, kiểm tra lỗ hổng OWASP & API. |
-| 💻 **Coding** | `ox-code-reviewer`, `ox-systematic-debug`, `ox-refactor-cleanup` | Review code đa trục, YAGNI, 4-phase debugging, dọn dẹp mã nguồn thừa. |
-| 🤖 **Autonomous** | `claude-code`, `hermes-agent`, `codex`, `computer-use` | Điều phối multi-agent, quản lý worktree, tự động hoá desktop/browser. |
-| 🧠 **MLOps** | `evaluating-llms-harness`, `llama-cpp`, `serving-llms-vllm`, `weights-and-biases` | Quantize GGUF, triển khai vLLM, đánh giá benchmark, W&B sweep. |
-| 📊 **Productivity**| `google-workspace`, `pdf`, `docx`, `xlsx`, `airtable`, `notion` | Tự động hoá tài liệu, xử lý bảng tính, OCR và tương tác workspace. |
+| 🛡️ **Security** | `security-audit`, `pen-test`, `security-and-hardening` | Secret scanning, SQLi/RCE/SSRF mitigation, OWASP Top 10 & API pentest checklists. |
+| 💻 **Coding** | `code-reviewer`, `systematic-debug`, `refactor-cleanup` | Multi-axis code reviews, YAGNI enforcement, 4-phase root-cause debugging. |
+| 🤖 **Autonomous** | `claude-code`, `hermes-agent`, `codex`, `computer-use` | Multi-agent delegation, worktree isolation, desktop & browser automation. |
+| 🧠 **MLOps** | `evaluating-llms-harness`, `llama-cpp`, `serving-llms-vllm`, `weights-and-biases` | GGUF quantization, vLLM deployment, evaluation harnesses, W&B sweeps. |
+| 📊 **Productivity**| `google-workspace`, `pdf`, `docx`, `xlsx`, `airtable`, `notion` | Document processing pipelines, spreadsheet automation, headless office generation. |
 
 ---
 
 ## 📄 License
-Phát hành theo giấy phép [MIT](LICENSE).
+Distributed under the [MIT License](LICENSE).

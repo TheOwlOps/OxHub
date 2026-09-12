@@ -1,11 +1,11 @@
 ---
-name: ox-systematic-debug
+name: systematic-debug
 description: Use when debugging crashes, unexpected outputs, panics, or flaky test failures.
 author: TheOwlOps
 version: 1.0.0
 ---
 
-# OX Systematic Root-Cause Debugger
+# Systematic Root-Cause Debugger
 
 Follow the 4-phase discipline: Understand, Isolate, Fix, Verify. Never guess-and-check.
 
