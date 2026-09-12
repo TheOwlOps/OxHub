@@ -3,7 +3,7 @@
     {
       "name": "setup",
       "description": "Configure Claude Code statusLine to use oxhud",
-      "command": "D:/OxHub/bin/oxhud.exe --agent=claude"
+      "command": "oxhud --agent=claude"
     }
   ]
 }

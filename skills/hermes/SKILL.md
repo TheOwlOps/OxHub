@@ -13,12 +13,12 @@ Use `oxhud` to inspect real-time agent token usage, context window consumption, 
 
 - **Render statusline directly**:
   ```bash
-  D:/OxHub/bin/oxhud.exe --agent=hermes
-  D:/OxHub/bin/oxhud.exe --agent=claude
-  D:/OxHub/bin/oxhud.exe --agent=codex
+  oxhud --agent=hermes
+  oxhud --agent=claude
+  oxhud --agent=codex
   ```
 
 - **Pipe JSON state**:
   ```bash
-  echo '{"model":"anti","used_tokens":50000,"total_tokens":256000,"active_tool":"terminal","task":"running tests"}' | D:/OxHub/bin/oxhud.exe --agent=hermes
+  echo '{"model":"anti","used_tokens":50000,"total_tokens":256000,"active_tool":"terminal","task":"running tests"}' | oxhud --agent=hermes
   ```
