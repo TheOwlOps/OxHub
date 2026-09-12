@@ -1,0 +1,8 @@
+{
+  "name": "oxhud",
+  "version": "0.1.0",
+  "description": "Universal real-time terminal HUD & statusline for Claude Code, Hermes, and Codex",
+  "author": {
+    "name": "TheOwlOps"
+  }
+}
