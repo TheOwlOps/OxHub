@@ -1,0 +1,37 @@
+{
+  "name": "oxhub-pack",
+  "version": "1.0.0",
+  "description": "TheOwlOps Engineering & Security Skills Pack for Claude Code, Hermes, and OpenAI Codex",
+  "skills": [
+    {
+      "name": "ox-security-audit",
+      "category": "security",
+      "path": "hub/security/security-audit/SKILL.md",
+      "description": "Static & dynamic security code audit, secret leak scanning, OWASP hardening"
+    },
+    {
+      "name": "ox-pen-test",
+      "category": "security",
+      "path": "hub/security/pen-test/SKILL.md",
+      "description": "API & network penetration checklist, auth bypass, IDOR, CORS & rate limit validation"
+    },
+    {
+      "name": "ox-code-reviewer",
+      "category": "coding",
+      "path": "hub/coding/code-reviewer/SKILL.md",
+      "description": "High-velocity code review for concurrency, leaks, error wrapping and YAGNI"
+    },
+    {
+      "name": "ox-systematic-debug",
+      "category": "coding",
+      "path": "hub/coding/systematic-debug/SKILL.md",
+      "description": "4-phase root-cause debugging: Reproduce, Isolate, Fix, Verify"
+    },
+    {
+      "name": "ox-refactor-cleanup",
+      "category": "coding",
+      "path": "hub/coding/refactor-cleanup/SKILL.md",
+      "description": "Boilerplate deletion, dead code elimination, and guard-clause flattening"
+    }
+  ]
+}
